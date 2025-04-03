@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class InMemoryIntegerKeyStoreServiceTest {
 
-    private final KeyStoreService<Integer> keyStoreService = new InMemoryIntegerKeyStoreService();
+    private final KeyStoreService<Integer, String> keyStoreService = new InMemoryIntegerKeyStoreService();
 
     @Test
     void shouldStoreKeyValuePairWhenKeyIsValid() {

@@ -2,11 +2,11 @@ package org.auto1.interview;
 
 import java.util.Optional;
 
-public interface KeyStoreService<T> {
+public interface KeyStoreService<K, V> {
 
-    T store(T key, String value);
+    K store(K key, String value);
 
-    Optional<String> retrieve(T key);
+    Optional<V> retrieve(K key);
 
     void clearAll();
 }

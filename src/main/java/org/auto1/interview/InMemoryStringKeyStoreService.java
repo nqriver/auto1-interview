@@ -5,7 +5,7 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class InMemoryKeyStoreService implements KeyStoreService<String> {
+public class InMemoryStringKeyStoreService implements KeyStoreService<String, String> {
 
     static final int ALLOWED_KEY_LENGTH = 20;
 

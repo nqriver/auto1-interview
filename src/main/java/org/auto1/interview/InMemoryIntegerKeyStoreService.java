@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class InMemoryIntegerKeyStoreService implements KeyStoreService<Integer> {
+public class InMemoryIntegerKeyStoreService implements KeyStoreService<Integer, String> {
 
     private final Map<Integer, String> keyStoreMap = new ConcurrentHashMap<>();
 

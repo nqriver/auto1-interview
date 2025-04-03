@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.auto1.interview.InMemoryKeyStoreService.ALLOWED_KEY_LENGTH;
+import static org.auto1.interview.InMemoryStringKeyStoreService.ALLOWED_KEY_LENGTH;
 
 class InMemoryStringKeyStoreServiceTest {
 
-    private final KeyStoreService<String> keyStoreService = new InMemoryKeyStoreService();
+    private final KeyStoreService<String, String> keyStoreService = new InMemoryStringKeyStoreService();
 
     @ParameterizedTest
     @ValueSource(strings = {"KEY", "key"})
